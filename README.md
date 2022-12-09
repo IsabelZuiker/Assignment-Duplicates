@@ -1,2 +1,3 @@
 # Computer-Science
-Assignment on duplicate detection 
+Repository for the assignment on duplicate detection for the Computer Science and Business Analytics course. In this assignment we will create a scalable duplicate detection method that finds duplicates from the product title.
+First, the data is cleaned. Secondly, we construct modelwords from the product titles, and from these modelwords we create binary vectors. Then, a signature matrix is created by using minhashing, which is the input voor Locality Sensitive Hashing (LSH). The signature matrix is divided in b bands, each containing r rows. The products in every band are compared and assigned to buckets using a hashfunction. Next, the candidate pairs are constructed and clustered using average linkage hierachical clustering algorithm.  In total 5 boostraps are performed. As a evaluation measure we use Pair Quality (PQ), Pair Completeness (PC), F1-measure and F1*-measure. 
